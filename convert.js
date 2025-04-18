@@ -75,12 +75,12 @@ function loadFile(file) {
     outputArea.innerHTML = "";
     const outputTextInitial = document.createElement("h3");
     outputTextInitial.style = "text-align: center; display: block;";
-    outputTextInitial.innerHTML = `${json.song.song} | ${
-      json.song.bpm
-    } BPM | SPEED ${parseFloat(json.song.speed).toFixed(2)}`;
+    outputTextInitial.innerHTML = `${json.song} | ${
+      json.bpm
+    } BPM | SPEED ${parseFloat(json.speed).toFixed(2)}`;
     outputArea.appendChild(outputTextInitial);
 
-    const bpm = json.song.bpm;
+    const bpm = json.bpm;
     const scratchList = [];
     const notesList = {};
     const sectionList = {};
@@ -94,9 +94,9 @@ function loadFile(file) {
       }
     }
 
-    for (i = 0; i < json.song.notes.length; i++) {
+    for (i = 0; i < json.notes.length; i++) {
       // sections
-      const section = json.song.notes[i];
+      const section = json.notes[i];
 
       if (section.mustHitSection == false) {
         var assignment = [0, 1, 2, 3, 4, 5, 6, 7];
