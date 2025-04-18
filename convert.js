@@ -63,7 +63,7 @@ function loadFile(file) {
     // Handle dropdown - "modulo", "ignore", "expanded"
     noteHandlingOption = document.getElementById("noteHandlingSelector").value;
 
-    const json = JSON.parse(
+    let json = JSON.parse(
       e.target.result.replace(/^\0+/, "").replace(/\0+$/, "") // sometimes has \x00 at the end
     );
 
