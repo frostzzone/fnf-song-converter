@@ -1,4 +1,4 @@
-# [fnf-song-converter](https://cabalex.github.io/fnf-song-converter/)
+# [fnf-song-converter](https://frostzzone.github.io/re-fnf-song-converter/)
 
 ## TOC (table of contents)
 
